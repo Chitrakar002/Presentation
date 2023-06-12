@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hand{
+    font-size: 300px;
+    animation: waving-hand 2s infinite;
+    transform-origin: 70% 70%;
+    cursor: pointer;
+}
+
+@keyframes waving-hand{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%
+    {
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-8.5deg);
+
+    }
+    30%{
+        transform: rotate(15deg);
+
+    }
+    40%{
+        transform: rotate(-5deg);
+
+    }
+    50%{
+        transform: rotate(10deg);
+
+    }
+    60%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+.text{
+    position: relative;
+    animation: textAnimation 4s infinite;
+}
+@keyframes textAnimation{
+    0%{
+        color:rgb(45, 65, 245);
+        /* border: 1px solid black; */
+        
+    }
+    15%{
+        color: rgb(252, 79, 209);
+    }
+    30%{
+        letter-spacing: 20px;
+        color:rgb(216, 69, 64);
+
+        /* margin-bottom: -40px; */
+    }
+    45%{
+        color:rgb(7, 184, 184);
+        /* border: 2px solid black; */
+    }
+    60%{
+        color:rgb(112, 245, 23);
+
+    }
+    75%{
+        letter-spacing:0px;
+        color:rgb(233, 70, 20);
+
+    }
+}
+.img1{
+    height:500px;
+    width: 500px;
+}
+.img2{
+    height: 100px;
+    cursor: pointer;
+}
+.wish-hidden{
+display: none;
+}
+.next-hidden{
+    display: none;
+}
+.textHidden{
+    display: none;
+}
+.wavingHand{
+    display: none;
+}
+.dance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.danceHidden{
+    display: none;
+}
+.goodLuck{
+    display: none;
+}
+.nextPage{
+    display: none;
+}
+.lastText{
+    font-size: 70px;
+  color: #f1f1f7;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9c024f, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #92054c, 0 0 40px #f77ab8, 0 0 50px #ff4da6, 0 0 60px #a51f62, 0 0 70px #810443, 0 0 80px #eb1881;
+  }
+    
+}
+.lastText p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: rgb(139, 7, 122);
+}
+.lastHidden{
+    display:none;
+}
