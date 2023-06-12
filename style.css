@@ -103,6 +103,9 @@ display: none;
     display: none;
 }
 .dance{
+    margin:45px;
+    height:350px;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,18 +131,22 @@ display: none;
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9c024f, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fc6fb5, 0 0 30px #9c024f, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #92054c, 0 0 40px #f77ab8, 0 0 50px #ff4da6, 0 0 60px #a51f62, 0 0 70px #810443, 0 0 80px #eb1881;
+    text-shadow: 0 0 20px #fff, 0 0 30px #dd69a3, 0 0 40px #f77ab8, 0 0 50px #ff4da6, 0 0 60px #e273ab, 0 0 70px #810443, 0 0 80px #eb1881;
   }
     
 }
 .lastText p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "sofia",verdana;
     font-size: 30px;
     color: rgb(139, 7, 122);
 }
 .lastHidden{
     display:none;
+}
+.lastText h2{
+    font-family: "sofia",sans-serif;
 }
